@@ -14,7 +14,7 @@ class UserBehavior(TaskSet):
         self.tokenInfo = None
         headers = auth_header()
         data = json.dumps({"account":"15898151218","password":"ga871218","type":0})
-        response = self.client.request(method="POST", url= "https://appapi-pre.zhaocaapp.cn/user/login",
+        response = self.client.request(method="POST", url= "https://xxx.xxx.cn/user/login",
                                        data = data,
                                        headers = headers)
         print("LOGIN RESULT:", response.status_code, response.content)
